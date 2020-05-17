@@ -179,7 +179,7 @@ static uint forcemousemod = ShiftMask;
 const unsigned int mousescrollincrement = 1;
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument                       release     alt */
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},                      1 },
+	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},                      1 },
 	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = mousescrollincrement},   0,          -1 },
 	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = mousescrollincrement},   0,          -1 },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
